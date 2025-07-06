@@ -43,7 +43,7 @@ Model 3: Considers nearby lot prices using GPS coordinates
 Final prices are output with smooth transitions and visualized using Bokeh.
 
 
-```mermaid
+
 graph TD
     A[Raw CSV Dataset] --> B[Data Preprocessing]
     B --> C{Preprocessing Steps}
