@@ -1,4 +1,3 @@
-# SA-Capstone-Dynamic-Pricing
 # 🚗 Dynamic Pricing for Urban Parking Lots
 
 **Summer Analytics 2025 – Capstone Project Submission**
@@ -29,6 +28,20 @@ We implemented 3 pricing models:
 ---
 
 ## 🧱 Architecture Diagram
+Real-time ingestion via Pathway replicates incoming parking log streams.
+
+Preprocessing includes timestamp merging, categorical mapping (vehicle type, traffic), and missing value handling.
+
+Data is fed into 3 models:
+
+Model 1: Linear increase with occupancy
+
+Model 2: Weighted demand formula
+
+Model 3: Considers nearby lot prices using GPS coordinates
+
+Final prices are output with smooth transitions and visualized using Bokeh.
+
 
 ```mermaid
 graph TD
